@@ -1,0 +1,7 @@
+<resources>
+    <!--<string name="app_name">OrderModule</string>-->
+    <string name="order_module_app_name">订单</string>
+
+    <string name="order_module_home_page">订单首页</string>
+
+</resources>

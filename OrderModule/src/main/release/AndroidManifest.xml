@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jackykeke.ordermodule">
+
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.jackykeke.ordermodule.OrderModuleMainActivity"
+            tools:replace="label"
+            android:label="@string/label_order_module">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.VIEW" />
+                <data
+                    android:host="com.jackykeke.ordermodule"
+                    android:scheme="router" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+
+
+</manifest>

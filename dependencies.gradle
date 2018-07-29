@@ -1,0 +1,58 @@
+def supportVersion = "26.1.0"
+def butterKnifeVersion = "8.4.0"
+def daggerVersion = "2.8"
+def routerVersion = "0.2.3"
+def arouterApiVersion = "1.2.1.1"
+def arouterCompilerVersion = "1.1.2.1"
+def butterKnifeGradlePluginVersion = "8.4.0"
+def toolsBuildGradle = "3.0.0"
+def constraintVersion = "1.1.2"
+
+
+project.ext {
+
+
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            applicationId    : "com.jackykeke.arouterdemo",
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "0.0.1"
+    ]
+
+
+    classpath = [
+            "butterknife-gradle-plugin": "com.jakewharton:butterknife-gradle-plugin:${butterKnifeGradlePluginVersion}",
+            "tools-build-gradle"       : "com.android.tools.build:gradle:${toolsBuildGradle}"
+    ]
+
+
+
+    dependencies = [
+            //android-support
+            "support-v4"          : "com.android.support:support-v4:${supportVersion}",
+            "appcompat-v7"        : "com.android.support:appcompat-v7:${supportVersion}",
+            "design"              : "com.android.support:design:${supportVersion}",
+            "recyclerview-v7"     : "com.android.support:recyclerview-v7:${supportVersion}",
+            "cardview-v7"         : "com.android.support:cardview-v7:${supportVersion}",
+            "constraint-layout"   : "com.android.support.constraint:constraint-layout:${constraintVersion}",
+
+            //alibaba ARouter
+            "ARouter-api"         : "com.alibaba:arouter-api:${arouterApiVersion}",
+            "ARouter-compiler"    : "com.alibaba:arouter-compiler:${arouterCompilerVersion}",
+
+            //butterknife
+            "butterknife"         : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            "butterknife-compiler": "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+
+            //test
+            "junit"               : "junit:junit:4.12",
+
+            //others
+            "fastjson"            : "com.alibaba:fastjson:1.2.31",
+
+    ]
+
+}

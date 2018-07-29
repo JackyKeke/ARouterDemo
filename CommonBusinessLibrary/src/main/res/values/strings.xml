@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CommonBusinessLibrary</string>
+
+
+    <string name="label_order_module">订单</string>
+    <string name="label_evaluation_module">评价</string>
+    <string name="label_statistics_module">统计</string>
+
+    <string name="label_more_module">更多</string>
+
+    <string name="label_app">ARouterDemo</string>
+</resources>
